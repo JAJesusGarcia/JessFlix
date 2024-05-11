@@ -499,7 +499,7 @@ footer {
     display: flex;
     flex-direction: row;
 }
-/* 
+
 .cardContactos {
     margin: 0.4em;
 }
@@ -541,5 +541,5 @@ footer {
     --github-color: #181717;
     --whatsapp-color: #25D366; 
     --linkedin-color: #0077;
-} */
+}
 
