@@ -542,4 +542,6 @@ footer {
     --whatsapp-color: #25D366; 
     --linkedin-color: #0077;
 }
-
+label {
+    font-size: 2em;
+}
