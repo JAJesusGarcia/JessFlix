@@ -430,6 +430,7 @@ button {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
 }
 
 .textos-tarjetas {
@@ -443,6 +444,7 @@ button {
 }
 
 .titulo-recomendadas {
+    text-align: center;
     color: beige;
     padding-top: 2em;
 }
