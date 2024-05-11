@@ -286,6 +286,13 @@ a {
     color: rgb(255, 0, 0);
 }
 
+@media (max-width: 48rem) {
+    .nav-item {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
 .active {
     /* background-color: #a80000cc; */
     color: white;
