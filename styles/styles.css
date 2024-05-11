@@ -1,0 +1,538 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+    padding: 0;
+    /* min-height: 100vh; */
+}
+
+
+.html-inicio, .body-inicio {
+    background: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),
+    url(../assets/fondoInicio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+.html-about, .body-about {
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), 
+    url(../assets/fondo-sobreProyecto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.html-historia, .body-historia {
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+    url(../assets/HISTORY-Fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.html-recomendadas, .body-recomendadas {
+    background: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), 
+    url(../assets/fondo-recomendadas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.html-inicio-sesion, .body-inicio-sesion {
+    background: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),
+    url(../assets/HEADER-Fondo3.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.html-registrarse, .body-registrarse {
+    background: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),
+    url(../assets/HEADER-Fondo3.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.conteiner-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+form {
+    background-color: #ffffff9a;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #ff0000;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.btn-submit:hover {
+    background-color: #6200ff;
+}
+
+@media screen and (min-width: 768px) {
+    form {
+        max-width: 500px;
+    }
+}
+
+
+    .botones-header {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+    }
+    
+    .boton-inicio {
+        text-decoration: none;
+        background-color: #4711113c;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .boton-inicio:hover {
+        background-color: #333;
+        color: #000000;
+    }
+    .boton {
+        text-decoration: none;
+        background-color: #4711113c;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .boton:hover {
+        background-color: #333;
+        color: #000000;
+    }
+
+    a {
+        color: #000000; /* Color rojo para los enlaces */
+    }
+
+    /* Mantén los estilos anteriores */
+
+/* Estilos específicos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .topnav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .nav-links {
+        display: none;
+    }
+    .boton-menu {
+        display: block;
+    }
+    .boton-menu span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        margin: 5px;
+        transition: transform 0.4s ease-in-out;
+    }
+    .boton-menu.open span:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    .boton-menu.open span:nth-child(2) {
+        opacity: 0;
+    }
+    .boton-menu.open span:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
+
+/* Estilos específicos para dispositivos de escritorio */
+@media screen and (min-width: 769px) {
+    .boton-menu {
+        display: none;
+    }
+    .nav-links {
+        display: flex;
+    }
+}
+
+    
+
+.container {
+    width: 90%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.contenedor-imagen-fondo-header {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor-imagen-fondo-header img{
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+    object-fit: cover;
+    object-position: 0px bottom;;
+}
+
+
+.menuheader {
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 0, 0, 0.87);
+    z-index: 999;
+}
+
+.menuheader ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.menuheader ul li a {
+    text-decoration: none;
+    color: #000;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* .menuheader ul li {
+    margin: 0 0;
+} */
+
+.menuheader a {
+    display: inline-block;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    transition: all 0.3s ease-out 0s;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+.tabmenu {
+    display: flex;
+    margin: 0;
+    transition: background-color 0.3s, color 0.3s;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.tabmenu:hover {
+    background-color:  #363636cc;
+    cursor: pointer;
+    margin: 0;
+}
+
+.tabmenu:hover a {
+    color: rgb(255, 0, 0);
+}
+
+.active {
+    /* background-color: #a80000cc; */
+    color: white;
+    font-weight: bold;
+}
+
+.topnav a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    position: sticky;
+    z-index: 1;
+}
+
+.navbar {
+    position: sticky;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+}
+
+/* Estilos para el formulario */
+
+
+
+
+.contenedor-peliculas {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    height: 100%;
+}
+
+.pelicula {
+    width: calc(33.33% - 33.33%);
+    margin: 10px;
+    transition: transform 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Agrega este estilo cuando el mouse entra en la tarjeta */
+.pelicula:hover {
+    transform: scale(1.05); /* Puedes ajustar el valor según lo desees */
+    box-shadow: 0px 8px 16px rgba(255, 0, 0, 0.446);
+}
+
+.contenedor-peliculas h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.peliculas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1em 0;
+}
+
+@media screen and (max-width: 768px) {
+    .pelicula {
+        width: calc(50% - 20px); /* 2 columnas en tabletas */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .pelicula {
+        width: calc(100% - 20px); /* 1 columna en teléfonos */
+    }
+}
+
+
+
+
+.peliculas .pelicula {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    margin: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.356);
+    flex-direction: column;
+}
+
+.peliculas .pelicula img {
+    margin: auto;
+    width: 300px;
+    height: 300px;
+}
+
+.peliculas .pelicula .informacion-pelicula {
+    display: flex;
+}
+
+.peliculas .pelicula .informacion-pelicula p {
+    flex: 1;
+    margin-right: 0.5em;
+}
+
+.peliculas .pelicula button {
+    border: 0.5em;
+    border-radius: 5%;
+    padding: 10px 25px;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    margin: 0.5em;
+}
+
+.peliculas .pelicula button:hover {
+    background-color:  #363636cc;
+    color: rgb(255, 0, 0);
+}
+
+button {
+    cursor: pointer;
+}
+
+.contenedorinformacion {
+    position: relative;
+    width: 100%;
+    padding: 1em;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.textos-tarjetas {
+    color: antiquewhite;
+}
+
+.titulo-informacion {
+    color: beige;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.titulo-recomendadas {
+    color: beige;
+    padding-top: 2em;
+}
+
+.texto-historia {
+    color: bisque;
+}
+
+li {
+    color: bisque;
+}
+
+.texto-informacion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+}
+
+.lista-caracterisiticas {
+    list-style-type: circle;  
+    margin-left: 20px;        
+    padding-left: 0;          
+}
+.lista-caracterisiticas li {
+    margin-bottom: 10px;      
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+}
+
+.contenedorContactos {
+    background-color: rgb(255, 0, 0);
+    height: 60px;
+    margin: auto;
+    margin-top: 8em;
+    margin-bottom: 5em;
+    padding: 1em 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black;
+    border-radius: 40px; */
+}
+
+.derechos {
+    font-size: 15px;
+    text-align: justify center;
+    /* text-align: 2em; */
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+}
+/* 
+.cardContactos {
+    margin: 0.4em;
+}
+
+.listaContactos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+.cardContactos i{
+    transition: transform 0.3s ease-in-out;
+    color: white;
+}
+
+.cardContactos:hover i{
+    transform: scale(1.3);
+
+}
+
+.cardContactos:hover i.fa-brands.fa-github.fa-xl {
+    color: var(--github-color);
+}
+
+.cardContactos:hover i.fa-brands.fa-whatsapp.fa-xl {
+    color: var(--whatsapp-color);
+}
+
+.cardContactos:hover i.fa-brands.fa-linkedin-in.fa-xl {
+    color: var(--linkedin-color);
+}
+
+:root {
+    --github-color: #181717;
+    --whatsapp-color: #25D366; 
+    --linkedin-color: #0077;
+} */
+

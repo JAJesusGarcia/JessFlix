@@ -1,0 +1,12 @@
+.boton-inicio {
+    text-decoration: none;
+    background-color: #4711113c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #333;
+    color: #000000;
+}

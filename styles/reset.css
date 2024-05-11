@@ -1,0 +1,44 @@
+/* Reset CSS básico */
+
+/* Establecer el box model para bordes y rellenos */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Resetear estilos de elementos comunes */
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  ol {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Establecer tipografía base */
+  body {
+    font-family: Arial, sans-serif; /* Cambia según tus preferencias */
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  /* Eliminar decoración de enlaces */
+  a {
+    text-decoration: none;
+  }
+  
+  /* Resetear lista */
+  ul,
+  ol {
+    list-style: none;
+  }
+  
+  /* Otras personalizaciones o estilos específicos del proyecto pueden seguir aquí */
+  
