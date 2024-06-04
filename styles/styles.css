@@ -2,7 +2,7 @@ body, html {
     height: 100%;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
     padding: 0;
     /* min-height: 100vh; */
 }
@@ -42,6 +42,14 @@ body, html {
     background-attachment: fixed;
 }
 
+.html-createMovies, .body-createMovies {
+    background: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),
+    url(../assets/HEADER-Fondo3.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .html-inicio-sesion, .body-inicio-sesion {
     background: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),
     url(../assets/HEADER-Fondo3.jpg);
@@ -58,13 +66,180 @@ body, html {
     background-attachment: fixed;
 }
 
+/* ////////////////////////////////////////////// */
+            /* FORMULARIOS */
+/* FORMULARIOS DE AGREGAR MAS PELICULAS */ 
+
+.coneteiner-form-create{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+} 
+
+.form {
+    background-color: #ffffff9a;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 30px;
+    color: #000000;
+}
+
+/* 
+.title::before {
+    width: 18px;
+    height: 18px;
+}
+
+.title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+}
+
+.title::before,
+.title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: #00bfff;
+} */
+
+
+.signin {
+    text-align: center;
+}
+
+.signin a:hover {
+    text-decoration: underline royalblue;
+}
+
+.signin a {
+    color: #00bfff;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 6px;
+}
+
+.form label {
+    position: relative;
+    width: 100%;
+}
+
+.form label .input {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    padding: 20px 05px 05px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+}
+
+.form label .input + span {
+    color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown + span {
+    top: 12.5px;
+    font-size: 0.9em;
+}
+
+.form label .input:focus + span,
+.form label .input:valid + span {
+    color: #ff0000;
+    top: 0px;
+    font-size: 0.7em;
+    font-weight: 600;
+}
+
+.input {
+    width: 100%;
+    font-size: medium;
+}
+
+.submit {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+    background-color: #16ae56;
+    width: 45%;
+}
+
+.submitClear {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+    background-color: #ff0000;
+    width: 45%;
+}
+
+.submit:hover {
+    background-color: #6200ff;
+}
+.submitClear:hover {
+    background-color: #6200ff;
+}
+@keyframes pulse {
+    from {
+        transform: scale(0.9);
+        opacity: 1;
+    }
+
+to {
+        transform: scale(1.8);
+        opacity: 0;
+    }
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1em;
+}
+/* -- FORMULARIOS DE AGREGAR MAS PELICULAS --> */
+
+
 .conteiner-form {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 80vh;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-top: 30px
 }
 
 form {
@@ -93,10 +268,22 @@ h2 {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 3px;
+    border-radius: 7px;
 }
 
 .btn-submit {
+    margin-bottom: 3px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #ff0000;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.btn-reset {
+    margin-top: 3px;
     width: 100%;
     padding: 10px;
     border: none;
@@ -243,7 +430,7 @@ h2 {
 .menuheader ul li a {
     text-decoration: none;
     color: #000;
-    padding: 20px;
+    padding: 15px;
     transition: all 0.3s ease-in-out;
 }
 
@@ -293,6 +480,7 @@ a {
     }
 }
 
+
 .active {
     /* background-color: #a80000cc; */
     color: white;
@@ -319,6 +507,31 @@ a {
     justify-content: space-between;
     padding: .5rem 1rem;
 }
+
+/* .spinner {
+    background-image: linear-gradient(rgb(186, 66, 255) 35%,rgb(0, 225, 255));
+    width: 50px;
+    height: 50px;
+    animation: spinning82341 1.7s linear infinite;
+    text-align: center;
+    border-radius: 50px;
+    filter: blur(1px);
+    box-shadow: 0px -5px 20px 0px rgb(186, 66, 255), 0px 5px 20px 0px rgb(0, 225, 255);
+  }
+  
+  .spinner1 {
+    background-color: rgb(36, 36, 36);
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    filter: blur(10px);
+  }
+  
+  @keyframes spinning82341 {
+    to {
+      transform: rotate(360deg);
+    }
+  } */
 
 /* Estilos para el formulario */
 
@@ -380,7 +593,7 @@ a {
     display: flex;
     justify-content: center;
     width: 330px;
-    height: 430px;
+    height: 500px;
     border-radius: 8px;
     margin: 20px;
     text-align: center;
@@ -405,7 +618,7 @@ a {
 
 .peliculas .pelicula button {
     border: 0.5em;
-    border-radius: 5%;
+    border-radius: 5px;
     padding: 10px 25px;
     color: black;
     text-align: center;
@@ -430,7 +643,6 @@ button {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    text-align: center;
 }
 
 .textos-tarjetas {
@@ -444,7 +656,6 @@ button {
 }
 
 .titulo-recomendadas {
-    text-align: center;
     color: beige;
     padding-top: 2em;
 }
@@ -491,9 +702,11 @@ footer {
     align-items: center;
 }
 
+
 .derechos {
     font-size: 15px;
     text-align: justify center;
+    align-items: center;
     /* text-align: 2em; */
     color: rgb(0, 0, 0);
     display: flex;
